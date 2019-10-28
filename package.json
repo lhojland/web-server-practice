@@ -1,8 +1,6 @@
 {
   "name": "web-server",
   "version": "1.0.0",
-  "engines": {
-    "node": "v12.09.1"},
   "description": "",
   "main": "index.js",
   "scripts": {
