@@ -3,7 +3,7 @@ const geocode = require('./geocode')
 
 const forecast = (latitude, longitude, callback) => {
 
-    const url = 'https://api.darksky.net/forecast/3d166d8cb740bf4cfd11ab717e75ec4b/' + latitude + ',' + longitude + '?units=si&lang=nl';
+    const url = 'https://api.darksky.net/forecast/3d166d8cb740bf4cfd11ab717e75ec4b/' + latitude + ',' + longitude + '?units=si';
     request({url: url, json: true}, (error, response) => {
         if (error) {
             callback('Unable to connect to weather service.', undefined)
